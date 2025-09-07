@@ -65,3 +65,11 @@ document.getElementById('bangladesh-railway-call').addEventListener('click', fun
     call('Bangladesh Railway Helpline', 163)
 })
 
+
+
+// Clear Call History 
+document.getElementById('clear').addEventListener('click', function(){
+    const callHistory = document.getElementById('call-history');
+    callHistory.style.display = "none";
+})
+
