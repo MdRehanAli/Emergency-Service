@@ -24,6 +24,23 @@ function call(service, number) {
         const remainingCoin = totalCoin - callCost;
         document.getElementById('coin').innerText = remainingCoin;
     }
+
+    const history = document.getElementById('call-history')
+    const div = document.createElement('div');
+    div.innerHTML = `
+    <div class="mx-auto">
+                            <div class="bg-[#FAFAFA] p-4 flex justify-between items-center gap-4 rounded-xl mb-3 ">
+                                <div>
+                                    <h2 class="font-semibold">${service}</h2>
+                                    <p class="text-[#5C5C5C]">${number}</p>
+                                </div>
+                                <div>
+                                    <p>${new Date().toLocaleTimeString()}</p>
+                                </div>
+                            </div>
+                        </div>
+    `
+    history.appendChild(div);
 }
 
 
@@ -68,7 +85,7 @@ document.getElementById('bangladesh-railway-call').addEventListener('click', fun
 
 
 // Clear Call History 
-document.getElementById('clear').addEventListener('click', function(){
+document.getElementById('clear').addEventListener('click', function () {
     const callHistory = document.getElementById('call-history');
     callHistory.style.display = "none";
 })
