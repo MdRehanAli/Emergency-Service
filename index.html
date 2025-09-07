@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
 
+    <!-- FavIcon Linked  -->
+    <link rel="shortcut icon" href="./assets/emergency.png" type="image/x-icon">
+
     <!-- Tailwind & DaisiUI CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -26,7 +29,7 @@
     <!-- Header Section -->
     <header>
         <!-- Navbar started -->
-        <nav class="max-w-7xl mx-auto my-6">
+        <nav class="mx-auto my-6 px-12">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex gap-3 items-center">
                     <img class="w-[50px]" src="./assets/logo.png" alt="">
@@ -64,11 +67,12 @@
     <!-- Main Section -->
     <main class="bg-[#F5FFF6] mx-w-7xl mx-auto">
         <!-- Mains Section Started  -->
-        <section class="px-12 py-12 grid grid-cols-4 gap-8">
+        <section class="px-12 py-12 grid grid-cols-1 xl:grid-cols-4 gap-8">
             <!-- all cards  -->
-            <div class="grid grid-cols-3 grid-rows-3 col-span-3 gap-8">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 md:grid-rows-2 lg:grid-rows-3 col-span-1 md:col-span-2 lg:col-span-3 gap-8 mx-auto">
 
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/emergency.png"
                             alt="Emergency">
@@ -84,7 +88,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md ">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/police.png"
                             alt="Police Icon">
@@ -100,7 +104,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/fire-service.png"
                             alt="fire-service">
@@ -116,7 +120,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/ambulance.png"
                             alt="ambulance">
@@ -132,7 +136,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/women-child.png" alt="">
                         <i class="fa-regular fa-heart text-2xl"></i>
@@ -147,7 +151,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/anti-corruption.png"
                             alt="">
@@ -163,7 +167,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/electricity.png" alt="">
                         <i class="fa-regular fa-heart text-2xl"></i>
@@ -178,7 +182,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/brac.png" alt="Brac">
                         <i class="fa-regular fa-heart text-2xl"></i>
@@ -193,7 +197,7 @@
                             Call</button>
                     </div>
                 </div>
-                <div class="p-8 bg-white rounded-xl shadow-md">
+                <div class="p-8 bg-white rounded-xl shadow-md max-w-[340px]">
                     <div class="flex justify-between items-center">
                         <img class="w-[60px] p-[14px] rounded-2xl bg-[#FFE3E2]" src="./assets/Bangladesh-Railway.png"
                             alt="">
@@ -212,29 +216,33 @@
 
             </div>
             <!-- history charts -->
-            <div class="h-full p-8 bg-white rounded-xl shadow-md">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="roboto-font text-xl font-bold"><i class="fa-regular fa-clock mr-1 text-2xl"></i> Call
-                        History</h3>
-                    <div>
-                        <a class="bg-[#00A63E] px-9 py-4 rounded-[50px] text-white font-bold">Clear</a>
-                    </div>
-                </div>
-
-                <!-- All Call History  -->
-                <div id="call-history">
-
-                    <!-- Each Call History  -->
-                    <div class="bg-[#FAFAFA] p-4 flex justify-between items-center gap-4 rounded-xl mb-3">
+            <div class="flex items-center justify-center">
+                <div class="h-full p-8 bg-white rounded-xl shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="roboto-font text-xl font-bold"><i class="fa-regular fa-clock mr-1 text-2xl"></i> Call
+                            History</h3>
                         <div>
-                            <h2 class="font-semibold">Fire Service Number</h2>
-                            <p class="text-[#5C5C5C]">999</p>
-                        </div>
-                        <div>
-                            <p>11:36:58 AM</p>
+                            <a class="bg-[#00A63E] px-9 py-4 rounded-[50px] text-white font-bold">Clear</a>
                         </div>
                     </div>
 
+                    <!-- All Call History  -->
+                    <div id="call-history">
+
+                        <!-- Each Call History  -->
+                        <div class="mx-auto">
+                            <div class="bg-[#FAFAFA] p-4 flex justify-between items-center gap-4 rounded-xl mb-3 ">
+                                <div>
+                                    <h2 class="font-semibold">Fire Service Number</h2>
+                                    <p class="text-[#5C5C5C]">999</p>
+                                </div>
+                                <div>
+                                    <p>11:36:58 AM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
