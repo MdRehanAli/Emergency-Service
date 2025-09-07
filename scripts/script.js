@@ -16,7 +16,7 @@ const callCost = 20;
 function call(service, number) {
     let totalCoin = parseInt(document.getElementById('coin').innerText);
     if (totalCoin <= 0) {
-        alert("Need at least 20 coins for a call");
+        alert("Opps!!! Need at least 20 coins for a call");
         return;
     }
     else {
@@ -107,7 +107,7 @@ for (const copy of copies) {
 function copy(service, number) {
     // alert(`Copied ${service}: ${number}`);
     navigator.clipboard.writeText(`${number}`).then(() => {
-        alert(`Copied ${service}: ${number}`);
+        alert(`Copied! ${service}: ${number}`);
     }).catch(() => {
         alert("Failed to copy");
     });
